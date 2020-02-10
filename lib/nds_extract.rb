@@ -98,12 +98,13 @@ end
  arr=[]
   a=0 
   while a < source.length 
-directors_name=  source[a][:name]
+directors_name= source[a][:name]
 movies= source[a][:movies]
-arr << [:directors_name => movies]
+arr << movies_with_director_key(directors_name,movies)
  a += 1
   end
 arr
+
 
 
 end
