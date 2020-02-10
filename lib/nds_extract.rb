@@ -100,16 +100,11 @@ end
   while a < source.length 
 directors_name=  source[a][:name]
 movies= source[a][:movies]
-m=0 
-while m < movies.length 
- directors_movies= movies[m][:title]
- arr << [:directors_name => directors_movies]
-  m+= 1
-
-end
+arr << [:directors_name => movies]
  a += 1
   end
 arr
+
 
 end
   # GOAL: For each director, find their :movies Array and stick it in a new Array
